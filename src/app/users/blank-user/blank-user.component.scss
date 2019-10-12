@@ -1,0 +1,44 @@
+.blank-user {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  background-color: rgb(248, 248, 248);
+  
+  height: 100%;
+  width: 100%;
+
+  padding: 5px 10px;
+
+  input {
+    display: block;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+
+    width: 100%;
+
+    margin-top: 10px;
+  }
+
+  &__btn-create {
+    display: block;
+
+    cursor: pointer;
+
+    outline: none;
+    border: 1px darkgreen solid;
+    border-radius: 4px;
+    background-color: white;
+
+    width: 100px;
+    height: 35px;
+
+    margin: 0 auto;
+    margin-top: 15px;
+
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: green;
+    }
+  }
+}

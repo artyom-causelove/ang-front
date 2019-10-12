@@ -1,0 +1,11 @@
+<div class="users">
+  <app-user *ngFor="let user of users; index as i; trackBy: identifyUser" 
+    class="users__item" 
+    [user]="user"
+    (onDeleted)="fetchUsers()"
+  ></app-user>
+  <app-blank-user
+    class="users__item"
+    (onCreatedUser)="fetchUsers()"
+  ></app-blank-user>
+</div>
