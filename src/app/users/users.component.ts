@@ -23,7 +23,7 @@ export class UsersComponent implements OnInit {
   }
 
   fetchUsers() {
-    fetch('http://127.0.0.2/api/users')
+    fetch('http://127.0.0.2:228/api/users')
       .then(async res => {
         this.users = await res.json();
       });

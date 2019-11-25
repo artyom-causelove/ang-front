@@ -30,7 +30,7 @@ export class UserComponent implements OnInit {
 
   deleteUser() {
 
-    fetch('http://127.0.0.2/api/users/' + this.id.toString(), {
+    fetch('http://127.0.0.2:228/api/users/' + this.id.toString(), {
       method: 'DELETE'
     })
       .then(async res => {

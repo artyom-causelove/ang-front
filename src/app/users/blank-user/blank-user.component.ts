@@ -27,7 +27,7 @@ export class BlankUserComponent implements OnInit {
     formData.append('age', this.age);
     formData.append('city', this.city);
 
-    fetch('http://127.0.0.2/api/users', {
+    fetch('http://127.0.0.2:228/api/users', {
       method: 'POST',
       body: formData
     })
